@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #f0f1eb;
+    background-color: #f4f4f4;
     color: #1a1313;
 }
 
@@ -140,16 +140,19 @@ footer p {
         background-color: hsl(41, 99%, 57%);
         color: #1a1414;
         text-align: center;
-        padding: 20px 0;
-        height: 200px; /* Footer height */
+        padding: 10px 0;
+        height: 120px; /* Footer height */
     
+    }
+    h1 {
+        font-size: larger;
     }
 
     nav {
         display: flex;
         justify-content: flex-end; /* Align buttons to the right */
         position: relative;
-        top: 20px;
+        top: 30px;
         right: 0px;
         transform: translateY(-50%);
     }
@@ -167,6 +170,13 @@ footer p {
         width: 50%;
         padding-left: 0% !important;
         text-align: left;
+    }
+    .headerbox nav a.active {
+        background-color: hsl(41, 99%, 57%) !important;
+        color: #333;    
+        padding-bottom: 0px; 
+        border-bottom-left-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;        /* Ensure the text color is not white */
     }
 }
 
@@ -224,3 +234,10 @@ h1 {
     text-align: left;
 }
 
+.headerbox nav a.active {
+    background-color: #f4f4f4;
+    color: #333;    
+    padding-bottom: 25px; 
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;        /* Ensure the text color is not white */
+}
