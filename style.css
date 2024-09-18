@@ -1,0 +1,193 @@
+/* Shared Styles for the Book Launch Website */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-color: hsl(41, 99%, 57%);
+    color: #1a1414;
+    text-align: center;
+    padding: 20px 0;
+    height: 100px; /* Footer height */
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    position: relative;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    background-color: hsl(41, 99%, 57%);
+    padding: 10px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #f0f1eb;
+    color: #1a1313;
+}
+
+section {
+    margin: 5%;
+    padding-bottom: 80px; /* Extra padding to avoid footer overlap */
+}
+section.purchase{
+    margin: 5%;
+    text-align: center;
+
+    padding-bottom: 80px; /* Extra padding to avoid footer overlap */
+}
+
+.purchasedetails {
+
+    margin: 0%;
+
+}
+
+section img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: right;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; /* Footer height */
+}
+footer p {
+
+    padding-right: 50px;
+    padding-top: 0x;
+}
+
+/* Basic Styling for Law Section */
+.law-section {
+    display: flex;
+    align-items: flex-start; /* Align text and image at the top */
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.law-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Ensures the text starts from the left */
+    max-width: 90%;
+}
+
+.law-image {
+    width: 300px;
+    height: auto;
+    margin-right: 20px; /* Ensure space between image and text */
+}
+
+.law-text {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+    margin-left: 20px; /* Remove any extra margin */
+}
+
+.law-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove default margin */
+}
+
+@media (max-width: 1100px) {
+    /* Stack image and text vertically on smaller screens */
+    .law-content {
+        flex-direction: column;
+        text-align: left;
+        justify-content:left;
+    }
+
+    .law-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .law-text {
+        text-align: left;
+        margin-left: 0;
+        line-height: 1.6;
+    }
+}
+
+.authors {
+
+    display: flex;
+    flex-direction: row;
+}
+.authorimage {
+
+    height: 160px;
+    width: 140px;
+    border-radius: 200px;
+}
+/* Styling for the header box */
+
+
+/* Styling for the image */
+.authorimage1 {
+    width: 100px; /* Adjust the size as per your need */
+    height: auto;
+    order: 1;
+}
+
+
+.authorimage1 {
+
+    height: 160px;
+    width: 160px;
+    display: flex;
+    left: 5%;
+    justify-content: flex-start; /* Align buttons to the right */
+    position: relative;    border-radius: 200px;
+}
+
+.law-text p {
+    margin-bottom: 20px; /* Adjust the value as needed for spacing */
+    line-height: 1.6; /* This ensures good readability */
+}
+
+p {
+    margin-bottom: 20px; /* Adjust the value as needed for spacing */
+    line-height: 1.6; /* This ensures good readability */
+}
+h1 {
+    line-height: 1.6; /* This ensures good readability */
+    text-align: left;
+    padding-left: 5%;
+
+}
+
+.purchase {
+    width: 50%;
+    padding-left: 20%;
+    text-align: left;
+}
+
